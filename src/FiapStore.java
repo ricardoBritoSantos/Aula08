@@ -13,15 +13,13 @@ public static final int TAMANHO_CARRINHO = 5;
 		usuario = leitor.next();
 		System.out.println("Digite sua senha");
 		senha = leitor.next();
-
-		if(usuario.equalsIgnoreCase("COMPRADOR") && senha.equals("123")){
+		
+		if(Funcoes.login(usuario, senha)){
 			System.out.println("Login bem sucedido!");
 		}else {
 			System.out.println("Usuário ou senha incorretos.");
 			System.exit(1);
 		}
-		
-		
 		
 		while(opcao!=3) {
 			Funcoes.exibirMenu();
@@ -52,12 +50,7 @@ public static final int TAMANHO_CARRINHO = 5;
 			
 		}
 		
-		
-		
-		
-		
-		
-
+		leitor.close();
 	}
 
 }

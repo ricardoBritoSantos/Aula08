@@ -15,5 +15,13 @@ public class Funcoes {
 		System.out.println("2 - Exibir total do carrinho");
 		System.out.println("3 - Sair");
 	}
+	
+	public static boolean login(String usuario, String senha) {
+		if(usuario.equalsIgnoreCase("COMPRADOR") && senha.equals("123")){
+			return true;
+		}
+		
+		return false;
+	}
 
 }
